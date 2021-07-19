@@ -1,1 +1,1 @@
-# TO-DO-LIST
+This is a Priority Based To Do List where the user will be able to create a new To Do List and also assign a priority to the task and the application will also list down the total number Of To Do List available and will also have an option to Filter task based on priorities.
