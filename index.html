@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="ct">
+            <h2>TO DO LIST</h2>
+            <label>Task: </label>
+            <input class="input" type="text" id="inp" placeholder="Task..." required>
+            <br>
+            <label>Priority: </label>
+            <select class="input" id="priority" required>
+                <option value="High" selected>High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <br>
+            <span onclick="addItem()" class="add">Save</span>
+            <br>
+            <div class="filterList">
+                <label>Filter: </label>
+                <span class="filter" id="all" onclick="sortList('all')">ALL</span>
+                <span class="filter" id="Low" onclick="sortList('Low');myFunction2()">LOW</span>
+                <span class="filter" id="Medium" onclick="sortList('Medium');myFunction1()">MEDIUM</span>
+                <span class="filter" id="High" onclick="sortList('High'); myFunction()">HIGH</span>
+            </div>
+            <div class="info"><label>Displayed tasks: <span id="inf">0</span></label></div>
+         </header>
+        <div class="scr">
+            <ul id="todos" >
+             </ul>
+        </div>
+        <script src="script.js"></script>
+      <script>
+function myFunction() {
+  document.body.style.backgroundColor = "red";
+}
+        function myFunction1() {
+  document.body.style.backgroundColor = "#FFBF00";
+}
+        function myFunction2() {
+  document.body.style.backgroundColor = "green";
+}
+</script>
+    </body>
+</html>
